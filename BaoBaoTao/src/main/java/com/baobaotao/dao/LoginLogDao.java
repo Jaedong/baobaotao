@@ -18,6 +18,11 @@ public class LoginLogDao {
 		jdbcTemplate.update(sqlStr, new Object[]{
 				loginLog.getUserId(),loginLog.getIp(),loginLog.getLoginDate()
 		});
+	}
+	
+	public int findLoginLogByUserName(String userName){
+		String sqlStr = "select count(*) from t_login_log where user_name = ?";
+		return jdbcTemplate.queryForInt(sqlStr);
 				
 	}
 }
