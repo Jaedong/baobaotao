@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="1" name="com.baobaotao.service.TestUserService" time="1.441" errors="0" skipped="0">
+<testsuite tests="2" failures="1" name="com.baobaotao.service.TestUserService" time="1.592" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.60-b23"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/lee/Documents/workspace/BaoBaoTao"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/lee/git/bbt/BaoBaoTao"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/lee/Documents/workspace/BaoBaoTao"/>
+    <property name="user.dir" value="/Users/lee/git/bbt/BaoBaoTao"/>
     <property name="java.runtime.version" value="1.8.0_60-b27"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -26,7 +26,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/lee/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7897404016702772556.tmp"/>
+    <property name="classworlds.conf" value="/Users/lee/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4635526957529829800.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/lee/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -62,8 +62,7 @@
     <property name="ftp.nonProxyHosts" value="local„ÄÅ169.254/16|*.local„ÄÅ169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.baobaotao.service.TestUserService" name="findUserByUserName" time="1.429"/>
-  <testcase classname="com.baobaotao.service.TestUserService" name="hasMatchUser" time="0.012">
+  <testcase classname="com.baobaotao.service.TestUserService" name="hasMatchUser" time="1.588">
     <failure type="java.lang.AssertionError:">java.lang.AssertionError: 
 	at org.junit.Assert.fail(Assert.java:91)
 	at org.junit.Assert.assertTrue(Assert.java:43)
@@ -104,5 +103,13 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
+    <system-out>调用Car的构造函数！
+调用setBrand()设置属性
+调用BeanNameAware方法
+调用beanFactoryAware方法
+调用InitializingBean方法
+调用init方法
+</system-out>
   </testcase>
+  <testcase classname="com.baobaotao.service.TestUserService" name="findUserByUserName" time="0.004"/>
 </testsuite>

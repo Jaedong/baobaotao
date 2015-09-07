@@ -12,6 +12,7 @@ public class Car implements BeanFactoryAware,BeanNameAware,InitializingBean,Disp
 	private String brand;
 	private String color;
 	private int maxSpeed;
+	private double price;
 	
 	private BeanFactory beanFactory;
 	private String beanName;
@@ -53,15 +54,33 @@ public class Car implements BeanFactoryAware,BeanNameAware,InitializingBean,Disp
 		this.brand = brand;
 	}
 	public void introduce(){
-		System.out.println("brand:"+brand + ";color:"+color + ";maxSpeed" + maxSpeed);
+		System.out.println("brand:"+brand + ";color:"+getColor() + ";maxSpeed" + getMaxSpeed());
 	}
 	
-	public void myInint(){
+	public void myInit(){
 		System.out.println("调用init方法");
 	}
 	
 	public void myDestory(){
 		System.out.println("调用myDestory方法");
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public int getMaxSpeed() {
+		return maxSpeed;
+	}
+	public void setMaxSpeed(int maxSpeed) {
+		this.maxSpeed = maxSpeed;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
 	}
 
 
